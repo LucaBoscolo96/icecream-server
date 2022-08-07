@@ -1,0 +1,95 @@
+//Create a user
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "User",
+    "email": "admin@admin.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "user"
+}
+
+###
+//Get All users
+GET http://localhost:5000/users
+
+###
+//GET SINGLE USER
+
+GET http://localhost:5000/users/d32db6ac-8bf1-4ece-8a90-9e4b676a4725
+###
+//update user
+PATCH http://localhost:5000/users/d32db6ac-8bf1-4ece-8a90-9e4b676a4725
+Content-Type: application/json
+
+{
+    "today": "0"
+}
+
+###
+//DELETE USER
+
+DELETE http://localhost:5000/users/3da0f8a1-a284-4074-bcda-d9122a950f3e
+
+###
+//Login User
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "user@user.com",
+    "password": "123456"
+}
+
+###
+//Login Admin
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "icecream123456"
+}
+
+###
+//get user
+GET http://localhost:5000/me
+
+###
+//logout user
+DELETE http://localhost:5000/logout
+
+###
+//get all products
+GET http://localhost:5000/products
+
+###
+//get ONE product
+GET http://localhost:5000/products/059d97f7-a54d-4995-8304-25913407b6a3
+
+
+###
+//create product
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "cacca",
+    "price": 3,
+    "quantity": 50
+}
+
+###
+//update product
+PATCH http://localhost:5000/products/9938a883-0005-426b-b6dc-749c4dd8f04c
+Content-Type: application/json
+
+{
+    "imgLink": "https://source.unsplash.com/Wq0tcKzIa0M"
+}
+
+###
+//delete product
+DELETE http://localhost:5000/products/06aae1c6-8d39-427d-b244-5e3fce7d9792
