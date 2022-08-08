@@ -1,7 +1,10 @@
 import { Sequelize } from "sequelize";
-const db = new Sequelize(process.env.DATABASE_URL, {
-  host: "localhost",
-  dialect: "mysql",
+
+const dbConfig = require(config.js);
+
+const db = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
+  host: dbConfig.HOST,
+  dialect: dbConfig.dialect,
 });
 
 export default db;
