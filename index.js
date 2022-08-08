@@ -34,7 +34,7 @@ app.use(
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:3000",
+    origin: "https://venerable-jelly-c59b68.netlify.app",
   })
 );
 app.use(express.json());

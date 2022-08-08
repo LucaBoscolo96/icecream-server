@@ -1,5 +1,5 @@
 //Create a user
-POST http://localhost:5000/users
+POST https://icecreamapp-database.herokuapp.com/users
 Content-Type: application/json
 
 {
@@ -12,15 +12,15 @@ Content-Type: application/json
 
 ###
 //Get All users
-GET http://localhost:5000/users
+GET https://icecreamapp-database.herokuapp.com/users
 
 ###
 //GET SINGLE USER
 
-GET http://localhost:5000/users/d32db6ac-8bf1-4ece-8a90-9e4b676a4725
+GET https://icecreamapp-database.herokuapp.com/users/d32db6ac-8bf1-4ece-8a90-9e4b676a4725
 ###
 //update user
-PATCH http://localhost:5000/users/d32db6ac-8bf1-4ece-8a90-9e4b676a4725
+PATCH https://icecreamapp-database.herokuapp.com/users/d32db6ac-8bf1-4ece-8a90-9e4b676a4725
 Content-Type: application/json
 
 {
@@ -30,12 +30,12 @@ Content-Type: application/json
 ###
 //DELETE USER
 
-DELETE http://localhost:5000/users/3da0f8a1-a284-4074-bcda-d9122a950f3e
+DELETE https://icecreamapp-database.herokuapp.com/users/3da0f8a1-a284-4074-bcda-d9122a950f3e
 
 ###
 //Login User
 
-POST http://localhost:5000/login
+POST https://icecreamapp-database.herokuapp.com/login
 Content-Type: application/json
 
 {
@@ -45,7 +45,7 @@ Content-Type: application/json
 
 ###
 //Login Admin
-POST http://localhost:5000/login
+POST https://icecreamapp-database.herokuapp.com/login
 Content-Type: application/json
 
 {
@@ -55,24 +55,24 @@ Content-Type: application/json
 
 ###
 //get user
-GET http://localhost:5000/me
+GET https://icecreamapp-database.herokuapp.com/me
 
 ###
 //logout user
-DELETE http://localhost:5000/logout
+DELETE https://icecreamapp-database.herokuapp.com/logout
 
 ###
 //get all products
-GET http://localhost:5000/products
+GET https://icecreamapp-database.herokuapp.com/products
 
 ###
 //get ONE product
-GET http://localhost:5000/products/059d97f7-a54d-4995-8304-25913407b6a3
+GET https://icecreamapp-database.herokuapp.com/products/059d97f7-a54d-4995-8304-25913407b6a3
 
 
 ###
 //create product
-POST http://localhost:5000/products
+POST https://icecreamapp-database.herokuapp.com/products
 Content-Type: application/json
 
 {
@@ -83,7 +83,7 @@ Content-Type: application/json
 
 ###
 //update product
-PATCH http://localhost:5000/products/9938a883-0005-426b-b6dc-749c4dd8f04c
+PATCH https://icecreamapp-database.herokuapp.com/products/9938a883-0005-426b-b6dc-749c4dd8f04c
 Content-Type: application/json
 
 {
@@ -92,4 +92,4 @@ Content-Type: application/json
 
 ###
 //delete product
-DELETE http://localhost:5000/products/06aae1c6-8d39-427d-b244-5e3fce7d9792
+DELETE https://icecreamapp-database.herokuapp.com/products/06aae1c6-8d39-427d-b244-5e3fce7d9792
