@@ -7,6 +7,17 @@ import SequelizeStore from "connect-session-sequelize";
 import UserRoute from "./routes/UserRoute.js";
 import ProductRoute from "./routes/ProductRoute.js";
 import AuthRoute from "./routes/AuthRoute.js";
+import sequelize from "sequelize";
+
+const verify = async () => {
+  try {
+    await sequelize.authenticate();
+    console.log("Connection has been established successfully.");
+  } catch (error) {
+    console.error("Unable to connect to the database:", error);
+  }
+  verify();
+};
 dotenv.config();
 
 const app = express();
@@ -44,6 +55,6 @@ app.use(AuthRoute);
 
 store.sync();
 
-app.listen(process.env.PORT || PORT, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log("server up and running...");
 });
