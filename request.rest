@@ -76,7 +76,7 @@ POST https://icecreamapp-database.herokuapp.com/products
 Content-Type: application/json
 
 {
-    "name": "cacca",
+    "name": "icecream3",
     "price": 3,
     "quantity": 50
 }

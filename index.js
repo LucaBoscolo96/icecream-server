@@ -9,15 +9,6 @@ import ProductRoute from "./routes/ProductRoute.js";
 import AuthRoute from "./routes/AuthRoute.js";
 import sequelize from "sequelize";
 
-const verify = async () => {
-  try {
-    await sequelize.authenticate();
-    console.log("Connection has been established successfully.");
-  } catch (error) {
-    console.error("Unable to connect to the database:", error);
-  }
-  verify();
-};
 dotenv.config();
 
 const app = express();
@@ -45,7 +36,7 @@ app.use(
 app.use(
   cors({
     credentials: true,
-    origin: "https://venerable-jelly-c59b68.netlify.app",
+    origin: "https://main--venerable-jelly-c59b68.netlify.app/",
   })
 );
 app.use(express.json());
