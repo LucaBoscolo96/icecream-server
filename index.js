@@ -36,7 +36,7 @@ app.use(
 app.use(
   cors({
     credentials: true,
-    origin: "https://main--venerable-jelly-c59b68.netlify.app/",
+    origin: "https://main--venerable-jelly-c59b68.netlify.app",
   })
 );
 app.use(express.json());
